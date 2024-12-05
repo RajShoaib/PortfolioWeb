@@ -1798,7 +1798,7 @@ html {
 
 .social-icons a {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   text-decoration: none;
 }
 
@@ -1808,5 +1808,43 @@ html {
 }
 
 .social-icons a:hover {
-  color: #05ebeb; /* Same color on hover for icons */
+  color: #ed9805; /* Same color on hover for icons */
+} 
+
+
+
+.visitor-count-text {
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color: transparent; /* Base text color transparent */
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #00e676, #ffca28); /* Gradient colors */
+  background-size: 300% 300%; /* Make the gradient move smoothly */
+  -webkit-background-clip: text; /* Clip gradient to the text */
+  -webkit-text-fill-color:transparent; /* Make text transparent */
+  animation: gradientMove 3s ease infinite; /* Animate gradient background */
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px; /* Smooth edges for the glass effect */
+  backdrop-filter: blur(2px); /* Frosted glass background */
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.39), /* Subtle outer glow */
+              0 0 2px rgba(255, 255, 255, 0.133); /* Additional glow */
+  border: 1px solid rgba(7, 246, 242, 0.771); /* Light glassy border */
 }
+
+/* Gradient animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
